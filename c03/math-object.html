@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>JavaScript Kalkulator Kapitału</title>
+  <link rel="stylesheet" href="css/c03.css" />
+</head>
+
+<body id="kapital">
+  <div id="kafelek1">
+    <h2>Kalkulator Kapitału</h2><br>
+    <h2>Podaj wysokość kapitału</h2>
+    <input type="number" name="wysKapitalu" id="wysKapitalu">
+
+    <h2>Podaj oprocentowanie</h2>
+    <input type="number" name="proc" id="proc">
+
+    <h2>Podaj okres (w latach)</h2>
+    <input type="number" name="okres" id="okres"> <br><br>
+    <input class="button" type="submit" onclick="obliczKap()" value="Oblicz">
+
+    <div id="wynik"></div>
+
+  </div>
+
+  <div id="kafelek2">
+    <h2>Kalkulator Kapitału z Kapitalizacją</h2><br>
+    <h2>Podaj wysokość kapitału</h2>
+    <input type="number" name="wysKapitalu" id="wysKapital">
+
+    <h2>Podaj oprocentowanie</h2>
+    <input type="number" name="proc" id="pro">
+
+    <h2>Podaj okres (w latach)</h2>
+    <input type="number" name="okres" id="okre">
+    <h2>Podaj ilość kapitalizacji w roku</h2>
+    <input type="number" name="kapi" id="kapi"><br><br>
+    <input class="button" type="submit" onclick="obliczKapit()" value="Oblicz">
+
+    <div id="wynik2"></div>
+
+  </div>
+
+  <div id="kafelek3">
+
+    <h2>Dodawianie</h2> <br>
+    <h2>Podaj ilość dodawanych liczb</h2>
+    <input type="text" id="dodawanie_ilosc">
+    <input type="button" id="dodawanie_zatwierdz" value="Zatwierdz" onclick="dodawnie()">
+    <div id="dodawanie_wpisywanie_liczb"></div>
+
+
+  </div>
+
+  <div id="kafelek4">
+
+    <h2>Przyszły projekt</h2>
+
+  </div>
+
+  <script src="js/math-object.js"></script>
+</body>
+
+</html>
